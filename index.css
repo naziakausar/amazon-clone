@@ -1,0 +1,688 @@
+
+*{margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(224, 230, 230);
+    
+    
+}
+/*nav heaader css*/
+
+.nav-header{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+    display: flex;
+  
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+/*nav logo box css*/
+.nav-logo{
+width: 150px;
+height: 50px;
+color: #2162A1;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0px 6px;
+border: transparent;
+}
+.nav-logo:hover{
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 12px 4px 6px 6px ;
+}
+.logo{margin-top: 6px;
+    width: 160px;
+    height: 50px;
+    background-image: url(./amazon-logo1-removebg-preview.png);
+    background-size: cover;
+}
+/* nav address box css*/
+.nav-address{
+    row-gap: 4px;
+min-width: 150px;
+height: 50px;
+display: flex;
+flex-direction: column;
+
+color: white;
+border: transparent;
+padding: 8px 10px 8px 4px;
+}
+.nav-address:hover{
+border: 1px solid white;
+border-radius: 2px;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+    align-items: center;
+ 
+}
+.icon i{
+    color: white;
+    font-size: 1.2rem;
+    
+}
+.address1{
+    font-size: .8rem;
+    color: #CCCCCC;
+    text-align: right;
+    padding-left: 22px;
+
+}
+
+.address2{
+    font-size: .8rem;
+    font-weight: 700;
+}
+.nav-search{
+    width: 450px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-search:focus{
+    border: 2px solid orange;
+    border-radius: 2px;
+}
+.Search-select{
+    width: 56px;
+    padding: 10px 6px;
+    column-gap: 4px;
+    color: #0f1111;
+    background-color: #f3f3f3;
+    border: none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    cursor: pointer;
+    
+
+}
+.Search-select:focus{
+    border-color: rgb(255, 145, 0);
+    border: 2px solid rgb(255, 145, 0);
+    }
+
+.Search-select:hover{
+background-color: #CCCCCC;
+}
+.Search-select option{
+    color:#0f1111 ;
+}
+.search-input{
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 36px;
+    font-size: .85rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 6px;
+}
+.search-icon{
+    width: 45PX;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 180, 89);
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    font-size: 1.4rem;
+}
+.search-icon:hover{background-color: rgb(241, 171, 40);
+
+}
+/* language box css*/
+.language{
+    width: fit-content;
+    height: 50px;
+    border: transparent;
+    gap: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+
+    /*padding: 20px;*/
+}
+.cart-icon{
+    font-size: 14px;
+}
+.language:hover{
+    border: 2px solid white;
+    border-radius: 2px;
+}
+/*sign in box css*/
+.nav-account{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: fit-content;
+height: 50px;
+padding: 6px;
+color: white;
+border: transparent;
+
+}
+.nav-account:hover{
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+.signin{
+    color: white;
+    font-size: .7rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.account{
+    color: white;
+    font-size: .8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.sign{
+    color: white;
+    font-size: .8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    
+}
+.panel{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    background-color: #232F3E;
+    color: white;
+    font-size: .8rem;
+}
+.pannel-icon{
+    width: fit-content;
+    height: auto;
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    border: transparent;
+    padding: 8px 9px;
+}
+.pannel-icon:hover{
+    border: 1px solid white;
+    border-radius: 2px;
+
+}
+.pannel-content{list-style: none;
+display: flex;
+flex-direction: row;
+gap: 4px;
+align-items: center;
+font-size: .8rem;
+}
+ul li{
+    border: transparent;
+    padding: 8px 9px
+}
+ul li:hover{
+    border: 1px solid white;
+    border-radius: 2px;
+}
+.popup{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin-top: 100px;
+}
+/*hero section css*/
+.hero-setion{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+.slider{
+    display: flex;
+    width: 100%;
+    
+}
+.slider img{
+    width: 100%;
+    height: 600px;
+    transition: infinite 0.15s ease;
+    animation-iteration-count: infinite;
+}
+.slider input{
+    display: none;
+}
+.dots{
+    display: flex;
+    justify-content: center;
+}
+.dots label{ width: 10px;
+    height: 10px;
+    border: 3px solid black;
+    border-radius: 50%;
+    transition: all 0.15s ease;
+    
+    cursor: pointer;
+    margin: 5px;
+
+}
+
+.dots label:hover{
+    background-color: black;
+}
+#img2:checked~.m2{
+    margin-left: 0%;
+}
+#img1:checked~.m1{
+    margin-left: -100%;
+}
+#img3:checked~.m3{
+    margin-left: -200%;
+}
+#img4:checked~.m4{
+    margin-left: -300%;
+}
+#img5:checked~.m5{
+    margin-left: -400%;
+}
+#img6:checked~.m6{
+    margin-left: -500%;
+}
+#img7:checked~.m{
+    margin-left: -600%;
+}
+
+
+/* card section css*/
+.cardContainer{
+    
+    height: 875px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+   
+}
+.mainCard{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 14px;
+    padding: 0px 12px;
+    
+}
+.mainCard2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 14px;
+    padding: 0px 12px;
+}
+.card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 270px;
+    height: 400px;
+    background-color: #FFFFFF;
+    padding: 20px 12px ;
+    row-gap: 8px;
+}
+.card1 p{
+    
+    font-size: 1.3rem;
+    color: #0F1111;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+.card1 a{
+font-size: .75rem;
+font-weight:600 ;
+font-family: Arial, Helvetica, sans-serif;
+color: #2162A1;
+margin-top: 4px5;
+text-decoration: none;
+}
+
+.card-Img{
+    display: flex;
+height: 270px;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    column-gap: 8px;
+    cursor: pointer;
+}
+.card-Img1{
+    display: flex;
+    height: 270px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 8px;
+    cursor: pointer;
+}
+.cardimg1 p{
+    font-size: .7rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* sign in section css*/
+.card-signin{
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height:400px ;
+   
+    
+}
+
+.signin-wraper{ display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 130px;
+    background-color: #FFFFFF;
+    row-gap: 16px;
+    padding: 16px ;
+    cursor: pointer;
+}
+.signin-wraper p{
+    
+    font-size: 1.3rem;
+    color: #0F1111;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+.signin-wraper a{
+text-decoration: none;
+
+}
+
+.sinin-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .6rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f3f3f3;
+    background-color: orange;
+}
+.signin-wraper button{
+    background-color: rgb(247, 212, 17);
+    border: none;
+    width: 100%;
+    padding: 6px  8px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.signin-wraper button:hover{
+    background-color: rgb(243, 203, 4);
+}
+
+
+
+
+
+/* footer section css*/
+.main-footer{
+    width: 100%;
+    height: 610px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+   
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2162A1;
+}
+.scroll-section{
+    width: 100%;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .7rem;
+    background-color: #232F3E;
+    cursor: pointer;
+    padding: 20px 0px;
+  
+}
+.scroll-section p{
+    color: #FFFFFF;
+    font-size: .7rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.scroll-section:hover{
+    background-color: #2a3849;
+    
+}
+.footer-content{
+    width: 100%;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #1d2733;
+    
+   
+   
+  
+}
+.content-panel{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #1d2733;
+    padding: 40px 0px;
+}
+
+ul h1{
+font-size: 1rem;
+font-weight: 600;
+font-family: Arial, Helvetica, sans-serif;
+margin-bottom: 14px;
+
+}
+ul a{
+    display: flex;
+    flex-direction: column;
+    font-size: .8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    row-gap: 10px;
+    color: #DDDDDD;
+    margin-bottom: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+ul a:hover{
+    text-decoration: underline;
+}
+/* footer amamzon logo section css*/
+.logo-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d2733;
+   border-top: 0.1px solid #4e4e4e;
+    padding: 16px auto;
+    
+}
+.logo-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+    width: 100%;
+    
+    height: 70px;
+    /*margin: 6px 0px 20px 0px;*/
+   
+    padding: 10px auto;
+}
+.amaz-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: fit-content;
+}
+.btn-container{
+    display: flex;
+    flex-direction: row;justify-content: center;
+    align-items: center;
+    column-gap: 6px;
+}
+.language-btn{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 8px 16px;
+    column-gap: 20px;
+}
+.down-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+.icon p{
+    font-size: .7rem;
+    color: #CCCCCC;
+}
+.language-btn2{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 8px 18px 8px 8px;
+    column-gap: 20px;
+}
+/*footer box4 css*/
+ .pannel2{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #131A22;
+    padding: 30px 0px;
+    row-gap: 20px;
+
+
+ }
+ .subContainer{
+   
+    min-width: 900px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 100px;
+ 
+ }
+
+ .ebook-text{
+    font-size: .8rem;
+    color: #DDDDDD;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .ebook-text:hover{
+text-decoration: underline;
+ }
+ .ebook-text2{
+    font-size: .7rem;
+    color: #999999;
+    font-weight: 400;
+ }
+ .ebook-text2:hover{
+    text-decoration: underline;
+     }
+ /*subContainer2 css for footer pannel2*/
+ .subContainer2{
+    
+    min-width: 900px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 100px;
+   
+    
+ }
+ /*footer bottom-Box css*/
+ .main-pages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #DDDDDD;
+    width: 100%;
+    height: 80px;
+    background-color: #131A22;
+padding: 10px 0px 30px 0px;
+row-gap: 4px;
+ }
+ .Pages{
+    padding: 6px auto;
+    display: flex;
+    flex-direction: row;
+    font-size: .7rem;
+    font-weight: 400;
+   
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    justify-content: center;
+  
+ }
+ .copyright{
+    display: flex;
+    font-size: .7rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+   
+    
+ }
